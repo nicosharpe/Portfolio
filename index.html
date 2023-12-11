@@ -1,76 +1,108 @@
 <!DOCTYPE html>
 <html lang="en-gb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Nicole Sharpe // Web Developer</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Nicole Sharpe // Web Developer</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+  <body>
+    <!-- main logo / nav -->
+    <header>
+      <div class="topnav" id="myTopnav">
+        <img
+          src="images/Comp 1.gif"
+          alt="logo"
+          style="width: 200px; height: 200px"
+        />
+        <a href="#home" class="active">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+      </div>
+    </header>
 
-<body>
-  <!-- main logo / nav -->
-  <header>
-
-
-    <div class="topnav" id="myTopnav">
-      <img src="images/Comp 1.gif" alt="logo" style="width:200px;height:200px;">
-      <a href="#home" class="active">Home</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
-      <a href="#work">Work</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
+    <!-- hero banner -->
+    <div id="hero-image">
+      <div class="hero-text">
+        <h1>Nicole Sharpe</h1>
+        <p>A junior Web Developer with a background in Graphic Design</p>
+        <button>Hire Me!</button>
+      </div>
     </div>
 
-  </header>
-
-  <!-- hero banner -->
-  <div id="hero-image">
-    <div class="hero-text">
-      <h1>Nicole Sharpe</h1>
-      <p>A Junior Web Developer with a background in Graphic Design</p>
-      <button>Hire me</button>
-    </div>
-  </div>
-
-  <section>
-    <div>
-      <h2>Junior Developer!</h2>
-    </div>
-  </section>
-<!-- 
+    <!-- 
   <main class="page-wrapper"> -->
     <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About Me</h2>
-      <p> I am a junior Front-End Web Developer with a background in Graphic Design.</p>
-    </section>
+    <main class="page-wrapper">
+      <section class="page-section" id="about">
+        <div class="header">
+          <h2>About Me</h2>
+        </div>
+        <p>
+          I am a junior Front-End Web Developer with a background in Graphic
+          Design. I recently completed my EdX course and I'm looking for work. With over 8 years of experience in Design I have a keen eye for detail and am a seasoned problem solver.
+          (placeholder text for now hehe) Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, eligendi! Est voluptas neque ullam eveniet, corrupti quae optio autem esse vel officiis sunt alias ab, rem exercitationem dicta odit ratione!
+        </p>
+      </section>
 
-    <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
+      <!-- portfolio container -->
+      <!-- <section class="page-section" id="work">
+      <div class="section-title-work">
+        <h2>Work</h2>
+      </div>
+
+    
       <div id="projects">
         <div id="project-1">
-          <img>
+          <img src="../images/Screenshot 2023-12-11 120721.png" alt="An image of project 1" width="400" height="300">
         </div>
         <div id="other-projects">
           <div id="project-2"></div>
           <div id="project-3"></div>
           <div id="project-4"></div>
 
-
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact</h2>
-    </section>
-  </main>
-</body>
+      <section class="page-section" id="work">
+        <div class="header">
+          <h2>Work</h2>
+        </div>
 
+        <section id="work-grid">
+          <div id="project1" class="work-grid-area">
+            <a class="heading">Project 1</a>
+          </div>
+          <div id="project2" class="work-grid-area">
+            <a class="heading">Project 2</a>
+          </div>
+          <div id="project3" class="work-grid-area">
+            <a class="heading">Project 3</a>
+          </div>
+          <div id="project4" class="work-grid-area">
+            <a class="heading">Project 4</a>
+          </div>
+          <div id="project5" class="work-grid-area">
+            <a class="heading">Project 5</a>
+          </div>
+        </section>
+      </section>
+
+      <!-- contact -->
+      <section class="page-section" id="contact">
+        <div class="header">
+          <h2>Contact</h2>
+        </div>
+          <a>07544345814</a>
+          <a>nicolesharpe11@gmail.com</a>
+          <a>GitHub</a>
+          <a>LinkedIn</a>
+          <a>Spotify</a>
+      </section>
+    </main>
+  </body>
 </html>
