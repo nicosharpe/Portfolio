@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
 }
@@ -18,9 +17,9 @@ body {
 
 /* nav bar styling */
 .topnav a {
-  float: left;
+  float: right;
   display: block;
-  color: #AD96C7;
+  color: #fff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -35,7 +34,7 @@ body {
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #000000;
   color: white;
 }
 
@@ -44,20 +43,34 @@ body {
   display: none;
 }
 
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
+
+#hero-image {
+  height: 500px;
+  width: 100%;
+  background-image: url("../images/headshot.png");
+  background-size: cover;
+  /* background-position: center;
+  background-repeat: no-repeat;
+  position: relative; */
+}
+
+.hero-text {
+  text-align: right;
+  position: relative;
+  top: 70%;
+padding-right: 10%;
+  color: #fff;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+}
+
+.page-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 
-.hero-banner {
-  background-image:url(../images/DSC00410\ -\ 2#.png);
-}
 
 h1,
 h2,

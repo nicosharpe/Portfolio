@@ -6,47 +6,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Nicole Sharpe // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
   <!-- main logo / nav -->
   <header>
-    <img src="images/Comp 1.gif" alt="logo" style="width:200px;height:200px;">
-    
+
+
     <div class="topnav" id="myTopnav">
+      <img src="images/Comp 1.gif" alt="logo" style="width:200px;height:200px;">
       <a href="#home" class="active">Home</a>
+      <a href="#contact">Contact</a>
       <a href="#about">About</a>
       <a href="#work">Work</a>
-      <a href="#contact">Contact</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
 
-
-    <h1>Nicole Sharpe</h1>
-
-
   </header>
 
   <!-- hero banner -->
-  <section class="hero-banner">
+  <div id="hero-image">
+    <div class="hero-text">
+      <h1>Nicole Sharpe</h1>
+      <p>A Junior Web Developer with a background in Graphic Design</p>
+      <button>Hire me</button>
+    </div>
+  </div>
+
+  <section>
     <div>
       <h2>Junior Developer!</h2>
     </div>
   </section>
-
-  <main class="page-wrapper">
+<!-- 
+  <main class="page-wrapper"> -->
     <!-- about me -->
     <section class="page-section" id="about">
       <h2>About Me</h2>
-      <h3> I am a junior Front-End Web Developer with a background in Graphic Design.</h3>
+      <p> I am a junior Front-End Web Developer with a background in Graphic Design.</p>
     </section>
 
     <!-- portfolio container -->
     <section class="page-section" id="work">
       <h2>Work</h2>
+      <div id="projects">
+        <div id="project-1">
+          <img>
+        </div>
+        <div id="other-projects">
+          <div id="project-2"></div>
+          <div id="project-3"></div>
+          <div id="project-4"></div>
+
+
+        </div>
+      </div>
     </section>
 
     <!-- contact -->
