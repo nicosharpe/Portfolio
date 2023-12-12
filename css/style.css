@@ -3,7 +3,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 0px;
   padding: 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   line-height: 1.5;
@@ -27,6 +27,19 @@ body {
   font-size: 20px;
 }
 
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+    font-size: 15px;
+    padding: 7px 8px;
+  }
+
+  .topnav a.work-link {
+    margin-bottom: 50px;
+  }
+}
 
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -49,17 +62,16 @@ body {
   bottom: 35px;
   background-position: top;
   background-repeat: no-repeat;
-  position: relative;
 }
 
 .hero-text {
   position: absolute;
-  right: 50px;
-  bottom: 50px;
+  right: 0px;
+  bottom: 0px;
   color: #fff;
   background-color: #ad96c7;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 25px;
   padding-bottom: 20px;
   padding-top: 12px;
   font-size: 18px;
@@ -100,13 +112,13 @@ body {
   padding-left: 10px;
   padding-bottom: 10px;
   padding-top: 10px;
-
 }
 
 .heading {
-font-size: 20px;
-bottom: 50px;
-left: 50px;
+  font-size: 20px;
+  bottom: 50px;
+  left: 50px;
+  color: #fff;
 }
 
 #project1 {
@@ -148,16 +160,27 @@ left: 50px;
   flex-basis: 20%;
 }
 
-#contact p {
+#contact .contact-links {
   flex-basis: 80%;
 }
 
-#contact a {
-  justify-content: space-between;
+.contact-links a {
+  margin: 10px;
+  padding: 10px;
 }
-/* .page-section > .header {
-flex-basis: 20%;
-} */
+
+@media screen and (max-width: 600px) {
+  .contact-links a {
+    display: grid;
+    grid-template-areas:
+      "nicolesharpe11@gmail.com"
+      "07544345814"
+      "GitHub"
+      "LinkedIn"
+      "Spotify";
+    justify-content: right;
+  }
+}
 
 h1,
 h2,
@@ -169,6 +192,6 @@ h6 {
 }
 
 p {
-  margin: 0;
+  margin: 30px;
   font-size: 18px;
 }
