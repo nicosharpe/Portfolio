@@ -3,7 +3,7 @@ This is the very first iteration of my online portfolio created as part of my Ed
 
 This challenge forced me to completely create a website using HTML and CSS from scratch andnjnon I learned a lot in the process, including how challenging it can be since no-one is going to be able to remember all the processes there are when writing css, although, doing this challenge has definitely been good practice and there is a lot that I have now become familiar with, specifically Grids (flex and regular) and Media Queries for different screen sizes.
 
-<img src="images\Screenshot 2023-12-29 194301.png"<img>
+<img src="images\Screenshot 2023-12-29 194301.png"></img>
 
 # Usage
 When the page is loaded the page presents my name, a recent photo, and links to sections about me, my work, and how to contact me. You will also see a logo animation I made in Adobe Illustrator and After Effects which in the future will say my full name.
